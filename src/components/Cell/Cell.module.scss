@@ -1,0 +1,31 @@
+@import "../../theme.scss";
+
+.root {
+  $size: 20px;
+  width: $size;
+  height: $size;
+  border: $color-border 1px solid;
+  background-color: $color-passive;
+  box-sizing: border-box;
+  margin: 0;
+
+  &.active {
+
+    &, &:focus, &:active {
+      outline: none;
+      background-color: $color-active;
+    }
+
+    &:hover {
+      background-color: change-color($color-active, $alpha: 0.7);
+    }
+  }
+  &:focus, &:active {
+    outline: none;
+    background-color: change-color($color-active, $alpha: 0.3);
+  }
+
+  &:hover {
+    background-color: change-color($color-active, $alpha: 0.1);
+  }
+}

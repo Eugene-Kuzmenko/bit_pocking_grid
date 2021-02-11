@@ -1,10 +1,10 @@
-import "./styles.css";
+import styles from "./App.module.scss";
+import Table from "./components/Table/Table";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <div className={styles.root}>
+      <Table numRows={8} numColumns={8} />
     </div>
   );
 }

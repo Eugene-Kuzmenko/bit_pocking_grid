@@ -1,10 +1,11 @@
 {
-  "name": "pocking-grid",
+  "name": "poke-table",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "clsx": "1.1.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-scripts": "4.0.0"
